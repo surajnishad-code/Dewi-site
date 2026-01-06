@@ -12,6 +12,18 @@ videoBox.addEventListener("click", () => {
     ytVideo.src = ""; // stops video
 });
 
+let imgBtn = document.getElementById("img-play");
+let backimg = document.getElementById("img-vid");
+let imgvid = document.getElementById("play-img-vid");
+
+imgBtn.addEventListener("click", () =>{
+    backimg.style.display = "flex";
+    imgvid.src = "https://www.youtube.com/embed/Y7f98aduVJ8?autoplay=1";
+});
+backimg.addEventListener("click", () =>{
+    backimg.style.display = "none";
+    imgvid.src = "";
+})
 
 let counters = document.querySelectorAll(".counter-num");
 
